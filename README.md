@@ -92,7 +92,7 @@ Request:
 
 ```json
 {
-  "message": "Congratulations! You've won a free ticket!"
+  "message": "Congratulations! You've won a free ticket!, claim now!!"
 }
 ```
 
@@ -100,7 +100,7 @@ Response:
 
 ```json
 {
-  "message": "Congratulations! You've won a free ticket!",
+  "message": "Congratulations! You've won a free ticket!, claim now!!",
   "prediction": "spam"
 }
 ```
