@@ -36,7 +36,7 @@ The trained model is then served through a FastAPI backend for real-time predict
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/Aravind008/ml-spam-detector.git
+git clone https://github.com/Aravin008/ml-spam-detector.git
 cd ml-spam-detector
 ````
 
