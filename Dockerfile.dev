@@ -1,0 +1,17 @@
+FROM python:3.10-slim
+
+WORKDIR /app
+
+# Copy ONLY requirements.txt first — this lets Docker cache it and not re-run installs unless requirements change
+COPY requirements.txt .  # ✅ This must come before copying the rest
+
+# Install dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Now copy the rest of the source code
+COPY . .
+
+EXPOSE 8000
+
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
+

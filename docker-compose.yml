@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  spam-detector-api:
+    container_name: spam-detector
+    build:
+      context: .
+      dockerfile: Dockerfile.dev  # ⬅ Change to Dockerfile.prod for prod
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    environment:
+      - ENV=dev
+
